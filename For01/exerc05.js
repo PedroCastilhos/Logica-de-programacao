@@ -2,11 +2,13 @@ const prompt = require('prompt-sync')();
 
 const word = prompt('Palavra: ');
 const num = Number(prompt('Número: '));
+let resposta = ' ';
 
-console.log(`Palavra: ${word}`);
-console.log(`Número: ${num}`);
+//console.log(`Palavra: ${word}`);
+//console.log(`Número: ${num}`);
 
 for (let i = 0; i < num; i++) {
-  console.log(`*`);
-  console.log(word);
+  resposta = resposta + word + '*';
 }
+
+console.log(`${resposta} ${word}`);
